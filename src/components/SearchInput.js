@@ -11,10 +11,10 @@ class SearchInput extends React.Component {
 
     render() {
         return (
-            <div className="container mt-4">
+            <div className="mt-4">
                 <form onSubmit={ this.getSearchValue }>
                     <div className="input-group mb-3">
-                        <input type="text" onChange={ e => this.setState({ searchValue: e.target.value }) } className="form-control" placeholder="Search..." />
+                        <input type="text" onChange={ e => this.setState({ searchValue: e.target.value }) } className="form-control" placeholder="Search..." value={ this.state.searchValue } />
                         <div className="input-group-append">
                             <button className="btn btn-primary">Search</button>
                         </div>
